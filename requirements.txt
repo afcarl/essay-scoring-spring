@@ -1,3 +1,4 @@
+gensim=0.10.1
 nolearn
 numpy==1.9.1
 pandas==0.14.1
