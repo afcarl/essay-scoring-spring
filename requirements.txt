@@ -1,0 +1,5 @@
+nolearn
+numpy==1.9.1
+pandas==0.14.1
+scikit-learn==0.15.1
+scipy==0.15.0.dev-8741fe1

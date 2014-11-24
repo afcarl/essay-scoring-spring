@@ -5,17 +5,17 @@ This code uses Python. Linux environment is needed for the code to run smoothly.
 
 Setting up the environment
 
-1. Create Python environment 
+**Create Python environment** 
 ```
 virtualenv --no-site-packages env
 ```
 
-2. Activate the environment
+**Activate the environment**
 ```
 source env/bin/activate
 ```
 
-3. Install requirements
+**Install requirements**
 ```
 pip install -r requirements.txt
 ```
@@ -35,3 +35,4 @@ It will combine and transform the XML files into CSV format.
 
 Creating models
 ========================
+
