@@ -36,3 +36,17 @@ It will combine and transform the XML files into CSV format.
 Creating models
 ========================
 
+Run script
+
+```
+python 2_model_generic.py
+```
+
+Ensembling models and exporting the results
+========================
+
+Run script
+
+```
+python 3_export_results.py
+```
