@@ -1,12 +1,8 @@
 from __future__ import division
-import sys; sys.path.append("/home/pawel/Dropbox/Programming/Python")
-
 from memoize import memoize
-
 from skipgrams import kskipngrams
 
 import psycopg2
-
 conn = psycopg2.connect("dbname='mcgraw' user='postgres' host='localhost' port=5432 password='pj28480'")
 
 @memoize
