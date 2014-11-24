@@ -42,11 +42,20 @@ Run script
 python 2_model_generic.py
 ```
 
-Ensembling models and exporting the results
+Ensembling models
 ========================
 
 Run script
 
 ```
-python 3_export_results.py
+python 3_create_ensemble.py
+```
+
+Exporting the results
+========================
+
+Run script
+
+```
+python 4_export_results.py
 ```
