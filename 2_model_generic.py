@@ -6,7 +6,7 @@ import string
 import glob
 import os
 
-import xgboost as xgb
+import lib.xgboost as xgb
 import glob
 
 # models
