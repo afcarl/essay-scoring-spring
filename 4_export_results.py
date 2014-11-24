@@ -31,10 +31,10 @@ ITEM_XML = """   <Student_Details Vendor_Student_ID="%(student_id)s">
 """
 
 
-for ensemblepath in glob.glob("/home/pawel/McGraw/v2/ensemble/*.csv"):
+for ensemblepath in glob.glob("ensemble/*.csv"):
     preds = pd.read_csv(ensemblepath)
     item_id = os.path.split(ensemblepath)[-1][:5]    
-    essays = EssayCollection("/home/pawel/McGraw/engine/data_work/spring/" + item_id + "_1.csv")
+    essays = EssayCollection("data/csv/" + item_id + "_1.csv")
     realscores = essays.meta_data()["score3"]
     scores = [col for col in preds.columns if col.find("prob") > 0]
 
