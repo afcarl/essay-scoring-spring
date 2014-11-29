@@ -129,6 +129,24 @@ To recognized texts written in different languages I used a Python library
 (lang.id)[https://github.com/saffsd/langid.py]. I calculated the probability
 of the language being English, French and Spanish.
 
+word2vec clusters
+----------------
+
+[word2vec](https://code.google.com/p/word2vec/) is a powerful library
+to calculate word embeddings. Each word is represented as a vector 
+of n real numbers. 
+
+I used precomputed vectors from news articles. A quote from the ```https://code.google.com/p/word2vec/```:
+
+```
+We are publishing pre-trained vectors trained on part of Google News dataset (about 100 billion words). The model contains 300-dimensional vectors for 3 million words and phrases.
+```
+
+I decided to cluster semantically similar words into clusters. The number
+of clusters was chosen to be d / 4. Where d is the number of unique words
+in the essay dictionary (bag of words). The reason for this was to 
+force to group sparse features into more dense representation.
+
 Model ensemble
 ================
 
