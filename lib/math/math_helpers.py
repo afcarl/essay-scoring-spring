@@ -207,14 +207,15 @@ def leave_only_math_expressions(text):
     return text
 
 if __name__ == "__main__":
-    #print simplify_math("2 PLUS 2 EQUALS 4")
-    #print simplify_math("2/2 PLUS 1 EQUALS 2")
-    #print simplify_math("2 TIMES 2 PLUS 2 EQUALS 7")
-    #print "6 + (6 + 6) = 18", simplify_math("6 + (6 + 6) = 18")
-    #print simplify_math("NO BECAUSE 6 AN 6 = 12 IN ADDITRON",debug=True)
-    #print simplify_math("6 + 6 = 12 AND 9 + 9 = 18",debug=True)
-    print check_equalities(simplify_math("<p>1. 18+12=36So 36 wold be the anser",debug=True))
-    print simplify_math("THE SUME IS 35 2 35 - 0 = 35")
+    example = [["2 PLUS 2 EQUALS 4"],
+               ["2/2 PLUS 1 EQUALS 2"],
+               ["2 TIMES 2 PLUS 2 EQUALS 7"],
+               ["NO BECAUSE 6 AN 6 = 12 IN ADDITRON"],
+               ["6 + 6 = 12 AND 9 + 9 = 18"],
+               ["THE SUME IS 35 2 35 - 0 = 35"]]
+
+    for ex in example:
+        print ex[0], "->", simplify_math(ex)
     #print simplify_math("HE'S CORRECT FOR THE TURKEY BUT NOT THE HAM 2 + 2 + 2 + 2 + 2 + 2 = 16 NOT 18 AND 3 + 3 + 3 + 3 + 3 + 3 = 18 SO ITS CORRECT",debug=True)
     #print leave_only_math_expressions("HE'S CORRECT FOR THE TURKEY BUT NOT THE HAM 2 + 2 + 2 + 2 + 2 + 2 = 16 NOT 18 AND 3 + 3 + 3 + 3 + 3 + 3 = 18 SO ITS CORRECT")    
     #print "0.5 + 0.5 = 1", simplify_math("0.5 + 0.5 = 1.0")
