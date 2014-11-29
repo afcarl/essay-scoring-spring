@@ -35,6 +35,17 @@ conn = psycopg2.connect("dbname='wiki' user='postgres' host='localhost' port=543
 
 Change the user and password to be able to use wikipedia coverage features
 
+***Download word2vec precalculated vectors```
+
+Run script 
+
+```
+./features/word2vec_download.sh
+```
+
+It will download a file ```GoogleNews-vectors-negative300.bin.gz``` with computed word2vec vectors.
+
+
 Importing data
 ========================
 

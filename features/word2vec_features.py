@@ -3,7 +3,7 @@ import numpy as np
 from essay_feature import EssayFeature
 
 import gensim
-word2vec_model = gensim.models.Word2Vec.load_word2vec_format("/home/pawel/McGraw/v2/features/GoogleNews-vectors-negative300.bin.gz",binary=True)
+word2vec_model = gensim.models.Word2Vec.load_word2vec_format("GoogleNews-vectors-negative300.bin.gz",binary=True)
 
 class EssayWord2Vec(EssayFeature):
     def __init__(self,source):
