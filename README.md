@@ -20,6 +20,21 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+**Download wikipedia n-grams**
+```
+./features/wikipedia/download.sh
+```
+
+After downloading you must create a database ```wiki``` in PostgreSQL.
+
+And then configure file ```features/wiki_ngram_coverage.py```
+
+```
+conn = psycopg2.connect("dbname='wiki' user='postgres' host='localhost' port=5432 password='XXXX'")
+```
+
+Change the user and password to be able to use wikipedia coverage features
+
 Importing data
 ========================
 

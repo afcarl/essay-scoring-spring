@@ -3,7 +3,7 @@ from memoize import memoize
 from skipgrams import kskipngrams
 
 import psycopg2
-conn = psycopg2.connect("dbname='mcgraw' user='postgres' host='localhost' port=5432 password='pj28480'")
+conn = psycopg2.connect("dbname='wiki' user='postgres' host='localhost' port=5432 password='XXXX'")
 
 @memoize
 def check_1gram(word):
