@@ -126,7 +126,7 @@ language probability
 ----------------
 
 To recognized texts written in different languages I used a Python library
-(lang.id)[https://github.com/saffsd/langid.py]. I calculated the probability
+[lang.id](https://github.com/saffsd/langid.py). I calculated the probability
 of the language being English, French and Spanish.
 
 word2vec clusters
